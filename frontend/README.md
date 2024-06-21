@@ -8,5 +8,6 @@ Result app displays resoult of voting.
 ```
 docker build -t vote-app:v1 .
 docker run -d -p 80:80 vote-app:v1 
-docker publish
+docker tag vote-app:v1 tresvitae/vote-app:v1
+docker push tresvitae/vote-app:v1
 ```
