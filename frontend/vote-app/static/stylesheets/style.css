@@ -6,7 +6,7 @@
 html,body{
   margin: 0;
   padding: 0;
-  background-color: #F7F8F9;
+  background-color: #323639;
   height: 100vh;
   font-family: 'Open Sans';
 }
@@ -32,13 +32,13 @@ button.a{
 }
 
 button.b{
-  background-color: #00cbca;
+  background-color: #0a00cb;
 }
 
 #tip{
   text-align: left;
   color: #30a8e8;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #hostname{
@@ -47,7 +47,7 @@ button.b{
   right: 0;
   left: 0;
   color: #30a8e8;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 #content-container{
@@ -90,7 +90,7 @@ button.b{
   border: none;
   color: darkgray;
   text-transform: uppercase;
-  font-size:18px;
+  font-size:22px;
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -111,7 +111,7 @@ button.b{
 }
 
 #choice button.b:focus{
-  background-color: #a20000;
+  background-color: #3e00a2;
 }
 
 #background-stats{
