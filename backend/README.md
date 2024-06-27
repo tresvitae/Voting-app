@@ -1,7 +1,7 @@
 redis:alpine
 postgres:15-alpine
-
 working-app
+
 ```
 docker pull redis:alpine
 docker pull postgres:15-alpine
