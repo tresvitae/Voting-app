@@ -9,3 +9,17 @@
 The voting application only accepts one vote per client browser. It does not register additional votes if a vote has already been submitted from a client.
 
 ![Architecture](architecture.png)
+
+## Install and rune environment
+[Minikube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download)
+
+```bash
+minikube start 
+kubectl apply -f kubernetes-templates/.
+minikube ip > on port 31000 and 31001
+```
+
+## Delete it
+```bash
+minikube delete
+```
