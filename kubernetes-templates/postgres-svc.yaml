@@ -5,9 +5,10 @@ metadata:
     app: postgres
   name: postgres-svc
 spec:
+  type: ClusterIP
   selector:
     app: postgres
   ports:
-  - name: postgres-svc
+  - name: "postgres-svc"
     port: 5432
     targetPort: 5432
