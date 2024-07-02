@@ -9,8 +9,9 @@
 The voting application only accepts one vote per client browser. It does not register additional votes if a vote has already been submitted from a client.
 
 ![Architecture](architecture.png)
+![Architecture2](architecture2.png)
 
-## Install and rune environment
+## Install and run the environment
 [Minikube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download)
 
 ```bash
