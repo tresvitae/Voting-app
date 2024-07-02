@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: result-app-deploy
   labels:
-    app: result
-  name: result-deploy
+    app: result-app
 spec:
   selector:
     matchLabels:
-      app: result
+      app: result-app
   template:
     metadata:
+      name: result-app
       labels:
-        app: result
+        app: result-app
     spec:
       containers:
-      - name: result-pod
+      - name: result-app
         image: tresvitae/result-app:v1
         ports:
-        - name: result
-          containerPort: 80
+        - containerPort: 80
