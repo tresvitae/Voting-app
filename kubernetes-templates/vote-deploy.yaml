@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: voting-app-deploy
   labels:
-    app: vote
-  name: vote-app
+    app: vote-app
 spec:
   selector:
     matchLabels:
-      app: vote
+      app: vote-app
   template:
     metadata:
+      name: vote-app-pod
       labels:
-        app: vote
+        app: vote-app
     spec:
       containers:
-      - name: vote-pod
+      - name: vote-app
         image: tresvitae/vote-app:v1.1
         ports:
-        - name: vote-pod
-          containerPort: 80
+        - containerPort: 80
