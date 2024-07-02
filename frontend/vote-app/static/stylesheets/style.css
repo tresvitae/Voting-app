@@ -10,27 +10,22 @@ html,body{
   height: 100vh;
   font-family: 'Open Sans';
 }
-
 button{
   border-radius: 0;
   width: 100%;
   height: 50%;
 }
-
 button[type="submit"] {
   -webkit-appearance:none; -webkit-border-radius:0;
 }
-
 button i{
   float: right;
   padding-right: 30px;
   margin-top: 3px;
 }
-
 button.a{
   background-color: #e2f81a;
 }
-
 button.b{
   background-color: #0a00cb;
 }
@@ -63,11 +58,9 @@ button.b{
   display: table-cell;
   text-align: center;
 }
-
 #content-container-center h3{
   color: #254356;
 }
-
 #choice{
   transition: all 300ms linear;
   line-height: 1.3em;
@@ -82,7 +75,6 @@ button.b{
   outline:0;
   text-decoration:underline;
 }
-
 #choice button{
   display: block;
   height: 80px;
@@ -97,23 +89,18 @@ button.b{
   text-align: left;
   padding-left: 50px;
 }
-
 #choice button.a:hover{
   background-color: #aec614;
 }
-
 #choice button.b:hover{
   background-color: #a20000;
 }
-
 #choice button.a:focus{
   background-color: #14b4c6;
 }
-
 #choice button.b:focus{
   background-color: #3e00a2;
 }
-
 #background-stats{
   z-index:1;
   height:100%;
