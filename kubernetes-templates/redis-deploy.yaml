@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: redis-pod
-        image: redis
+        image: redis:7.2-alpine
         ports:
         - containerPort: 6379
