@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: postgres-deploy
+  name: postgres-db-deploy
   labels:
     name: postgres-db
     app: voting-app
@@ -15,12 +15,12 @@ spec:
     metadata:
       name: postgres-db
       labels:
-        name: redis-db
+        name: postgres-db
         app: voting-app
     spec:
       containers:
       - name: postgres-pod
-        image: postgres:15-alpine
+        image: postgres
         ports:
         - containerPort: 5432
         env:
