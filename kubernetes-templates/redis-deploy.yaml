@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: redis-deploy
+  name: redis-db-deploy
   labels:
     name: redis-db
     app: voting-app
@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: redis-pod
-        image: redis:7.2-alpine
+        image: redis
         ports:
         - containerPort: 6379
