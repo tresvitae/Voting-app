@@ -1,39 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: worker-app-deploy
   labels:
-    app: worker
-  name: worker-deploy
+    name: worker-app
+    app: voting-app
 spec:
+  replicas: 1
   selector:
     matchLabels:
-      app: worker
+      name: worker-app
+      app: voting-app
   template:
     metadata:
+      name: worker-app
       labels:
-        app: worker
+        name: worker-app
+        app: voting-app
     spec:
       containers:
-        - name: worker-pod
-          image: tresvitae/worker-app:v2
+      - name: worker-pod
+        image: tresvitae/worker-app:v2
 ---
-apiVersion: autoscaling/v2
-kind: HorizontalPodAutoscaler
-metadata:
-  labels:
-    app: worker
-  name: worker-hpa
-spec:
-  maxReplicas: 8
-  minReplicas: 2
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: worker-hpa
-  metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target: 
-        type: Utilization
-        averageUtilization: 50
