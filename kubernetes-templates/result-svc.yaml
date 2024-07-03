@@ -3,12 +3,14 @@ kind: Service
 metadata:
   name: result-svc
   labels:
-    app: result-app
+    name: result-app
+    app: voting-app
 spec:
   type: NodePort
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 30005
+    nodePort: 30010
   selector:
-    app: result-app
+    name: result-app
+    app: voting-app

@@ -3,19 +3,22 @@ kind: Deployment
 metadata:
   name: result-app-deploy
   labels:
-    app: result-app
+    name: result-app
+    app: voting-app
 spec:
   selector:
     matchLabels:
-      app: result-app
+      name: result-app
+      app: voting-app
   template:
     metadata:
       name: result-app
       labels:
-        app: result-app
+        name: result-app
+        app: voting-app
     spec:
       containers:
-      - name: result-app
+      - name: result-pod
         image: tresvitae/result-app:v1
         ports:
         - containerPort: 80
