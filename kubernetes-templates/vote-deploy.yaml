@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: vote-pod
-        image: tresvitae/vote-app:v1.1
+        image: tresvitae/vote-app:v2
         ports:
         - containerPort: 80
