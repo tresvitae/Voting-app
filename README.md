@@ -24,3 +24,6 @@ minikube ip > on port 31000 and 31001
 ```bash
 minikube delete
 ```
+
+Source: [official](https://kubernetes-bootcamp.wikitops.io/exercise-app/voting-app)
+
